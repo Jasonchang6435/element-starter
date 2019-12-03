@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/images/logo.png">
     <div>
       <el-button @click="startHacking">Start</el-button>
+      <el-button @click="greeting">test</el-button>
     </div>
   </div>
 </template>
@@ -15,6 +16,14 @@ export default {
         title: 'It works!',
         type: 'success',
         message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
+        duration: 5000
+      })
+    },
+    greeting() {
+      this.$message({
+        title: 'It works!',
+        type: 'success',
+        message: 'test One!',
         duration: 5000
       })
     }
